@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="#" style="padding-right: 100px;">Web Application Name</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 menu-item-section">
+                <li *ngFor="let menu of menus; let i = index" >
+                    <button class="btn btn-outline-primary btn-menu" [routerLink]="menu.link">
+                        {{ menu.name }}
+                    </button>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <button class="btn btn-outline-danger" style="margin-left: 100px" (click)="logout()">Logout</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<div class="container main-content">
+    <router-outlet></router-outlet>
+</div>

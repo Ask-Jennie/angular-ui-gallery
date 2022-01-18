@@ -1,0 +1,1 @@
+export var FIELDS_SIGNUP = [{"name": "name", "val": "", "type": "single_line_text"}, {"name": "email", "val": "", "type": "email"}, {"name": "password", "val": "", "type": "password"}]
