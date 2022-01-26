@@ -1,0 +1,66 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 5%), inset 0 -1px 0 rgb(0 0 0 / 15%);
+}
+
+.sidebar {
+    margin-top: 100px;
+    position: fixed;
+    width: 30ch;
+}
+
+.display-area {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.search-area {
+    margin-top: 150px;
+}
+
+.selected-category {
+    margin-bottom: 40px;
+}
+
+.form-control {
+    width: 100%;
+}
+
+.ui-box {
+    padding: 20px;    
+    border-radius: 5px;
+    border: 1px solid #e9ecef;
+    border-left: 4px solid #5bc0de;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 5%), inset 0 -1px 0 rgb(0 0 0 / 15%);
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.ui-lib-image {
+    width: 90%; margin-left: 5%;
+}
+
+pre {
+    background: #f6f8fa; border-radius: 6px;padding: 16px;
+    overflow: auto;
+    line-height: 50px;
+    margin-top: 20px;
+}
+
+.btn-copy {
+    list-style: 1.45;
+    float: right;
+    margin: 8px;
+}
+
+ul {
+    list-style: none;
+    border: 1px solid gray;
+    padding: 10px;
+    width: 80%;
+}
+
+li {
+    margin-bottom: 20px;
+}
