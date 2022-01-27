@@ -16,23 +16,20 @@
   <div class="container">
     <div class="row">
       <div class="col-md-3">
-        <div class="sidebar">
-          <p class="selected-category">No Categories selected</p>
+        <div class="sidebar"> 
+          <br><br>
           <ul>
             <li>
                 <h5>Categories</h5>
             </li>
             <li  *ngFor="let tag of tags; let j = index">
-                <a href="#">{{tag}} ({{counts[tag]}})</a>
+                <a href="#">{{tag.tag_name}} ({{tag.count}})</a>
             </li>            
           </ul>
         </div>      
       </div>
       <div class="col-md-9">
         <div class="search-area">
-          <input class="form-control" placeholder="Search Library Name Here">
-        </div>
-        <div class="display-area">
           <div class="ui-box" *ngFor="let gallery of ui_gallery; let i = index"> 
             <h2 class="ui-lib-name">{{gallery.jennie_conf.title}}</h2>    
             <p>{{gallery.jennie_conf.description}}</p>
@@ -43,8 +40,7 @@
               <pre><button class="btn btn-primary btn-copy">Copy</button>jennie bootstrap add {{gallery.app_name}}</pre>
             </div>
           </div>
-        </div>
+        </div>        
       </div>
     </div>
-    
-  </div>
+</div>

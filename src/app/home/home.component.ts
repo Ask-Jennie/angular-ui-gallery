@@ -17,17 +17,8 @@ export class HomeComponent implements OnInit {
       data => {
         data: {
           this.ui_gallery = data["payload"]["data"];
-          this.ui_gallery.forEach(element => {
-            if (this.tags.indexOf(element["tag"] === -1)) {
-              this.tags.push(element["tag"])
-              this.counts[element["tag"]] = 1;
-            } else {
-              this.counts[element["tag"]] += 1;
-            }
-          });
-          console.log(this.ui_gallery);
-          console.log(this.counts);
-          console.log(this.tags);
+          this.tags = data["payload"]["counts"];
+          
         }
       }
     )
