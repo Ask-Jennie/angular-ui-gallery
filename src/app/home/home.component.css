@@ -12,7 +12,7 @@
     position: fixed;
     width: 30ch;  
 }
-.ui-sidebar{
+.ui-sidebar { 
     width: 30ch;
     position: fixed;
     height: calc(100% - 200px);
@@ -61,7 +61,9 @@ pre {
     float: right;
     margin: 8px;
 }
-
+.btn-jennie:focus {
+    box-shadow: none;
+}
 ul {
     list-style: none;
     border: 1px solid #e5e5e5;
